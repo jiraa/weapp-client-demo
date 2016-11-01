@@ -7,25 +7,25 @@
     bottom:0;
 }
 .line{
-    padding-top: 30rpx;
+    padding-top: 25px;
 }
 .line text{
     color: #6D6D72;
-    font-size: 28rpx;
-    margin-left: 40rpx;
+    font-size: 14px;
+    margin-left: 20rpx;
 }
 .line-control{
-    border-bottom: #d9d9d9 1px solid;
-    border-top: #d9d9d9 1px solid;
+    border-bottom: #d9d9d9 1rpx solid;
+    border-top: #d9d9d9 1rpx solid;
     background-color: #fff;
-    margin-top: 10rpx;
+    margin-top: 7px;
 }
 .line-control .item{
     box-sizing: border-box;
     text-align: left;
     color: #007AFF;
-    font-size: 32rpx;
-    padding-left: 40rpx;
+    font-size: 16px;
+    padding-left: 20rpx;
     position: relative
 }
 .line-control .item:active{
@@ -38,9 +38,9 @@
     background: #fff;
 }
 .line-control .item-inner{
-    border-bottom: #d9d9d9 1px solid;
-    height: 90rpx;
-    line-height: 90rpx;
+    border-bottom: #d9d9d9 1rpx solid;
+    height: 44px;
+    line-height: 44px;
 }
 .line-control .item:last-child .item-inner{
      border:none;
@@ -59,7 +59,7 @@
 .line-control .switch-status{
     color: #999;
     position: absolute;
-    right: 40rpx;
+    right: 20rpx;
     top: 0;
 }
 .line-control .item.disabled{
@@ -69,21 +69,30 @@
     background: none;
 }
 .line .demo{
-    height: 90rpx;
-    line-height: 90rpx;
+    height: 44px;
+    line-height: 44px;
     box-sizing: border-box;
     text-align: left;
     color: #333;
     background-color: #fff;
     position: relative;
     font-size: 32rpx;
-    padding-left: 40rpx;
+    padding-left: 20rpx;
+    margin-top: 7px;
 }
 .line .demo .link{
     position: absolute;
     right: 40rpx;
     top: 0rpx;
     color: #8E8E93;
+}
+.icon-arrow{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14rpx;
+    height: 22rpx;
+    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/arrow.svg) no-repeat ;
+    margin-left: 3px;
 }
 .hide{
     display: none
@@ -115,4 +124,10 @@
         font-size: 38rpx;
         padding-left: 40rpx;
     }
+    .icon-arrow{
+    display: inline-block;
+    vertical-align: middle;
+    width: 24rpx;
+    height: 32rpx;
+}
 }

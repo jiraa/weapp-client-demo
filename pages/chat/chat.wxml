@@ -5,7 +5,7 @@
                 <image class="avatar" src="{{message.user.avatarUrl}}" mode="aspectFill"></image>
                 <view class="text">
                     <view class="nickname">{{message.user.nickName}}</view>
-                    <view class="content">{{message.content}}</view>
+                    <view class="content"><text>{{message.content}}</text></view>
                 </view>
             </view>
             <view wx:if="{{message.type == 'system'}}" class="system-message">
@@ -14,8 +14,8 @@
         </view>
     </scroll-view>
     <view class="input-panel">
-        <button class="pic-icon"></button>
+        <view class="pic-icon"></view>
         <input type="text" value="{{inputContent}}" bindchange="changeInputContent" class="send-input"></input>
-        <button bindtap="sendMessage" class="send-btn">发送</button>
+        <view bindtap="sendMessage" class="send-btn">发送</view>
     </view>
 </view>

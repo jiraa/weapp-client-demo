@@ -60,10 +60,15 @@
     border: #ccc 1rpx solid;
     border-radius: 4px;
     background: #fff;
-    font-size: 36rpx;
-    line-height: 36rpx;
-    padding: 20rpx;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    padding: 20rpx 25rpx 20rpx 20rpx;
     position: relative;
+    max-width: 455rpx;
+    text-indent: 0;
+}
+.text .content text{
+    line-height: 40rpx
 }
 .user-message.me .text .content{
     background: #a0e75b;
@@ -75,7 +80,7 @@
     width: 0;
     height: 0;
     content: '';
-    border: 13rpx dashed transparent;
+    border: 15rpx dashed transparent;
 }
 
 .user-message.other .text .content::after,.user-message.other .text .content::before{
@@ -83,12 +88,12 @@
     border-right-style: solid;
 }
 .user-message.other .text .content::before{
-    top: 18rpx;
-    border-right-color: #ccc;
+    top: 24rpx;
+    border-right-color: #ddd;
 }
 .user-message.other .text .content::after{
-    border: 12rpx solid transparent;
-    top: 19rpx;
+    border: 14rpx solid transparent;
+    top: 26rpx;
     border-right-color: #fff;
 }
 
@@ -98,12 +103,12 @@
 }
 
 .user-message.me .text .content::before{
-    top: 18rpx;
-    border-left-color: #70b44d;
+    top: 24rpx;
+    border-left-color: #9fc98a;
 }
 .user-message.me .text .content::after{
-    border: 12rpx solid transparent;
-    top: 19rpx;
+    border: 14rpx solid transparent;
+    top: 26rpx;
     border-left-color: #a0e75b;
 }
 .text .content.img{
@@ -124,17 +129,20 @@
 .input-panel{
     height: 100rpx;
     box-sizing: border-box;
-    padding: 13rpx 20rpx 0;
+    padding: 13rpx 10rpx 0;
     background: #f5f5f7;
     border-top:#d7d7d9 1rpx solid;
     box-sizing: border-box;
     display: flex;
 }
 .pic-icon{
-    width: 60rpx;
-    height: 44rpx;
-    margin: 15rpx 20rpx 0 0;
-    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/send.svg) ;
+    width: 57rpx;
+    height: 57rpx;
+    margin: 9rpx 20rpx 0 0;
+    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/upload.svg) no-repeat ;
+}
+.pic-icon:active{
+    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/upload-2.svg) no-repeat ;
 }
 .send-input{
     flex: 1;
@@ -147,11 +155,13 @@
     padding: 0 10rpx;
 }
 .send-btn{
-    width: 160rpx;
-    height: 72rpx;
-    line-height: 72rpx;
-    background-color: #a0e75a;
-    font-size: 28rpx;
+    width: 57rpx;
+    height: 57rpx;
+    margin: 9rpx 0;
+    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/send-b.svg) no-repeat;
+}
+.send-btn:active{
+    background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/send-b-2.svg) no-repeat ;
 }
 .me .nickname{
     display: none;
@@ -166,10 +176,11 @@
         border: #ccc 1rpx solid;
         border-radius: 4px;
         background: #fff;
-        font-size: 42rpx;
-        line-height: 44rpx;
-        padding: 20rpx;
+        font-size: 40rpx;
+        line-height: 40rpx;
+        padding: 25rpx 25rpx 25rpx 20rpx;
         position: relative;
+        max-width: 425rpx;
     }
     .user-message.other .text .content::before{
         top: 22rpx;
@@ -205,12 +216,6 @@
         box-sizing: border-box;
         display: flex;
     }
-    .pic-icon{
-        width: 60rpx;
-        height: 44rpx;
-        margin: 25rpx 20rpx 0 0;
-        background:url(http://imgcache.qq.com/open_proj/proj_qcloud_v2/wechat_mc/pic/send.svg) ;
-    }
     .send-input{
         flex: 1;
         height: 92rpx;
@@ -221,11 +226,14 @@
         box-sizing: border-box;
         padding: 0 10rpx;
     }
+    .pic-icon{
+        width: 77rpx;
+        height: 77rpx;
+        margin: 12rpx 20rpx 0 0;
+    }
     .send-btn{
-        width: 180rpx;
-        height: 92rpx;
-        line-height: 92rpx;
-        background-color: #a0e75a;
-        font-size: 36rpx;
+        width: 77rpx;
+        height: 77rpx;
+        margin: 12rpx 0 0 0;
     }
 }
